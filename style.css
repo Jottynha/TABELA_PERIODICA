@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #eee959, #2f95ee); /* Degradê de azul claro para azul mais escuro */
+}
+
+#periodic-table {
+    display: grid;
+    grid-template-columns: repeat(19, 50px); /* Aumentando o número de colunas para acomodar a seta */
+    grid-gap: 2px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.element {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+  border: 2px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.atomic-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5px;
+    font-size: 10px;
+    color: #333;
+}
+
+.element:hover .element-info {
+  display: block;
+}
+
+.element-info-quad {
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  display: none;
+  z-index: 1;
+  /* Movido para o lado direito e ajustado conforme necessário */
+}
+
+.element-info {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1;
+    font-size: 14px;
+    width: 200px;
+    text-align: left;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.periodo-1 {
+  background-color: #ffb070;
+}
+
+.periodo-2 {
+  background-color: #8ac6ff;
+}
+
+.periodo-3 {
+  background-color: #75ffa5;
+}
+
+.periodo-4 {
+  background-color: #ff8a8a;
+}
+
+.periodo-5 {
+  background-color: #ffff8f;
+}
+
+.periodo-6 {
+  background-color: #a385ff;
+}
+
+.periodo-7 {
+  background-color: #ff9ef7;
+}
+
+.periodo-8 {
+  background-color: #75f6ff;
+}
+
+.periodo-9 {
+  background-color: #b6a8c2;
+}
+
+/* Adiciona negrito aos símbolos dos elementos */
+.element strong {
+    font-weight: bold;
+}
