@@ -19,7 +19,7 @@ Este projeto é uma tabela periódica interativa, criada com HTML, CSS e JavaScr
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/seu-usuario/tabela-periodica-interativa.git
+    git clone https://github.com/Jottynha/TABELA_PERIODICA.git
     ```
 
 2. Navegue até a pasta do projeto:
